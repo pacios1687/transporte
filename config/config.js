@@ -32,7 +32,9 @@ let urlDB;
 
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/transporte';
-} 
+} else{
+    urlDB = 'mongodb mongodb+srv://admin:soloyoytu1687@cluster0.wm1zj.mongodb.net/MERN?retryWrites=true&w=majority'
+}
 process.env.URLDB = urlDB;
 
 
